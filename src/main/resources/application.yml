@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /interview-quiz
+
+bot:
+  api-key: YOUR_API_KEY_IS_HERE
+  host: https://apigw1.bot.or.th
+  financial-institutions-holidays-uri: /bot/public/financial-institutions-holidays
