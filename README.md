@@ -1,17 +1,17 @@
 # Interview-quiz Workspace Setup
 
 Prerequisites:
-Java 17 or later
-Maven 3 (https://maven.apache.org/)
-Redis server (https://redis.io/) (Optional, only needed if using Spring Cache with Redis)
+- Java 17 or later
+- Maven 3 (https://maven.apache.org/)
+- Redis server (https://redis.io/) (Optional, only needed if using Spring Cache with Redis)
 
 Bot Configuration (Replace with your own values):
-Client ID: Replace ADD_YOUR_CLIENT_ID with your bot's client ID.
+- Client ID: Replace ADD_YOUR_CLIENT_ID with your bot's client ID.
 
 Spring Configuration:
-Cache Type: Redis (Can be changed to other caching providers)
-Redis Host: localhost (Update if your Redis server is running on a different host)
-Redis Port: 6379 (Update if your Redis server uses a different port)
+- Cache Type: Redis (Can be changed to other caching providers)
+- Redis Host: localhost (Update if your Redis server is running on a different host)
+- Redis Port: 6379 (Update if your Redis server uses a different port)
 
 Steps:
 1. Clone the repository
