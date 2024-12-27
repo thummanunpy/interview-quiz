@@ -1,3 +1,39 @@
+# Interview-quiz Workspace Setup
+
+Prerequisites:
+Java 17 or later
+Maven 3 (https://maven.apache.org/)
+Redis server (https://redis.io/) (Optional, only needed if using Spring Cache with Redis)
+
+Bot Configuration (Replace with your own values):
+Client ID: Replace ADD_YOUR_CLIENT_ID with your bot's client ID.
+
+Spring Configuration:
+Cache Type: Redis (Can be changed to other caching providers)
+Redis Host: localhost (Update if your Redis server is running on a different host)
+Redis Port: 6379 (Update if your Redis server uses a different port)
+
+Steps:
+1. Clone the repository
+    git clone https://github.com/thummanunpy/interview-quiz.git
+
+2. Install Dependencies:
+   cd interview-quiz
+   mvn clean install
+
+3. (Optional) Configure Redis:
+   If you are not using Spring Cache with Redis, you can skip this step.
+   Configure your local Redis server according to its documentation.
+
+4. Replace Bot Configuration Placeholders:
+    Replace ADD_YOUR_CLIENT_ID with your bot's client ID in the following files:
+    - src/main/resources/application.properties
+
+5. Run the Application:
+    mvn spring-boot:run
+
+
+
 # Interview Quiz
 
 This assignment is an application to retrieve information about financial institution holiday.
