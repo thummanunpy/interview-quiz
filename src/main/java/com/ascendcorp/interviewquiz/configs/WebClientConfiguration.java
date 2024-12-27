@@ -8,16 +8,21 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
-public class WebClienttConfiguration {
+public class WebClientConfiguration {
 
     @Value("${bot.host}")
     private String botHost;
+
+    @Value("${bot.client-id}")
+    private String clientId;
 
     @Bean("botWebClient")
     public WebClient webClient() {
         return WebClient
             .builder()
             .baseUrl(botHost)
+            .defaultHeader("accept", "application/json")
+            .defaultHeader("X-IBM-Client-Id", clientId)
             .build();
     }
 

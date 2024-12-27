@@ -6,4 +6,12 @@ server:
 bot:
   api-key: YOUR_API_KEY_IS_HERE
   host: https://apigw1.bot.or.th
+  client-id: ADD_YOUR_CLIENT_ID
   financial-institutions-holidays-uri: /bot/public/financial-institutions-holidays
+
+spring:
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
