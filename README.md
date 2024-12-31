@@ -21,16 +21,16 @@ Steps:
    cd interview-quiz
    mvn clean install
 
-3. (Optional) Configure Redis:
+4. (Optional) Configure Redis:
    If you are not using Spring Cache with Redis, you can skip this step.
    Configure your local Redis server according to its documentation.
 
-4. Replace Bot Configuration Placeholders:
+5. Replace Bot Configuration Placeholders:
     Replace ADD_YOUR_CLIENT_ID with your bot's client ID in the following files:
     - src/main/resources/application.properties
 
-5. Run the Application:
-    mvn spring-boot:run
+6. Run the Application:
+   -  mvn spring-boot:run
 
 
 
