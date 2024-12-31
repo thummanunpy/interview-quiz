@@ -14,22 +14,29 @@ Spring Configuration:
 - Redis Port: 6379 (Update if your Redis server uses a different port)
 
 Steps:
-1. Clone the repository
+1. Clone the repository:
+   
     git clone https://github.com/thummanunpy/interview-quiz.git
 
-2. Install Dependencies:
+3. Install Dependencies:
+
    cd interview-quiz
+   
    mvn clean install
 
-4. (Optional) Configure Redis:
+5. (Optional) Configure Redis:
+   
    If you are not using Spring Cache with Redis, you can skip this step.
+   
    Configure your local Redis server according to its documentation.
 
-5. Replace Bot Configuration Placeholders:
-    Replace ADD_YOUR_CLIENT_ID with your bot's client ID in the following files:
+7. Replace Bot Configuration Placeholders:
+   
+   Replace ADD_YOUR_CLIENT_ID with your bot's client ID in the following files:
     - src/main/resources/application.properties
 
-6. Run the Application:
+9. Run the Application:
+
    -  mvn spring-boot:run
 
 
